@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just One — Legal</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1c1c1e;
+      --muted: #6e6e73;
+      --accent: #000000;
+      --border: #e5e5ea;
+      --card: #f9f9f9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --fg: #f2f2f7;
+        --muted: #8e8e93;
+        --accent: #ffffff;
+        --border: #2c2c2e;
+        --card: #1c1c1e;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .container { max-width: 480px; width: 100%; text-align: center; }
+    .app-icon {
+      width: 80px; height: 80px;
+      background: var(--accent);
+      border-radius: 18px;
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 28px;
+    }
+    .app-icon svg { width: 40px; height: 40px; fill: var(--bg); }
+    h1 {
+      font-size: 2rem; font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .tagline {
+      font-size: 1rem; color: var(--muted);
+      margin-bottom: 48px;
+    }
+    .cards { display: flex; flex-direction: column; gap: 12px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      text-decoration: none;
+      color: var(--fg);
+      display: flex; align-items: center; justify-content: space-between;
+      transition: opacity 0.15s;
+    }
+    .card:hover { opacity: 0.75; }
+    .card-left { text-align: left; }
+    .card-title { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+    .card-desc { font-size: 0.875rem; color: var(--muted); }
+    .card-arrow { color: var(--muted); font-size: 1.1rem; }
+    .footer {
+      margin-top: 48px;
+      font-size: 0.8rem; color: var(--muted);
+      line-height: 1.6;
+    }
+    .footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="app-icon">
+      <!-- Simple "1" icon -->
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+          font-family="-apple-system, sans-serif" font-size="26" font-weight="700">1</text>
+      </svg>
+    </div>
+
+    <h1>Just One</h1>
+    <p class="tagline">One task. One focus. One day at a time.</p>
+
+    <div class="cards">
+      <a class="card" href="privacy-policy.html">
+        <div class="card-left">
+          <div class="card-title">Privacy Policy</div>
+          <div class="card-desc">How we handle your data</div>
+        </div>
+        <span class="card-arrow">›</span>
+      </a>
+
+      <a class="card" href="terms-of-use.html">
+        <div class="card-left">
+          <div class="card-title">Terms of Use</div>
+          <div class="card-desc">Rules and conditions for using Just One</div>
+        </div>
+        <span class="card-arrow">›</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 SmartAI Forge S.L. · <a href="mailto:smartaiforge@gmail.com">smartaiforge@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Just One</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1c1c1e;
+      --muted: #6e6e73;
+      --accent: #000000;
+      --border: #e5e5ea;
+      --card: #f9f9f9;
+      --link: #007aff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --fg: #f2f2f7;
+        --muted: #8e8e93;
+        --accent: #ffffff;
+        --border: #2c2c2e;
+        --card: #1c1c1e;
+        --link: #0a84ff;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+    .back {
+      display: inline-flex; align-items: center; gap: 6px;
+      text-decoration: none; color: var(--muted);
+      font-size: 0.9rem; margin-bottom: 48px;
+      transition: opacity 0.15s;
+    }
+    .back:hover { opacity: 0.7; }
+    .badge {
+      display: inline-block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 2.25rem; font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .meta { font-size: 0.875rem; color: var(--muted); margin-bottom: 48px; }
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 48px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    h2 {
+      font-size: 1.1rem; font-weight: 600;
+      margin-top: 48px; margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    p { margin-bottom: 14px; font-size: 0.95rem; }
+    ul, ol { padding-left: 22px; margin-bottom: 14px; }
+    li { font-size: 0.95rem; margin-bottom: 6px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th { font-weight: 600; color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .pill {
+      display: inline-block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+    hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+    .footer { font-size: 0.8rem; color: var(--muted); margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); }
+    .footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <a class="back" href="index.html">‹ Back</a>
+
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: February 23, 2026 · Effective: February 23, 2026</p>
+
+    <div class="intro">
+      Just One is designed with privacy at its core. <strong>We do not collect personal data, create user accounts, or track your behaviour.</strong> Your tasks live on your device and, optionally, in your own private iCloud database — never on our servers.
+    </div>
+
+    <!-- 1 -->
+    <h2>1. Who We Are</h2>
+    <p>
+      Just One is developed and published by <strong>SmartAI Forge S.L.</strong>, a company incorporated in Spain.
+    </p>
+    <ul>
+      <li><strong>Company:</strong> SmartAI Forge S.L.</li>
+      <li><strong>Country:</strong> Spain (European Union)</li>
+      <li><strong>Contact:</strong> <a href="mailto:smartaiforge@gmail.com">smartaiforge@gmail.com</a></li>
+    </ul>
+    <p>
+      SmartAI Forge S.L. acts as the <strong>data controller</strong> within the meaning of the EU General Data Protection Regulation (GDPR) and the Spanish Organic Law 3/2018 on Data Protection (LOPDGDD).
+    </p>
+
+    <!-- 2 -->
+    <h2>2. What Data Just One Uses</h2>
+    <p>Just One stores the following data <strong>solely on your device and your private iCloud database</strong>:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Where stored</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Your task text (what you type each day)</td>
+          <td>Core app functionality — displaying and tracking your One Thing</td>
+          <td><span class="pill">Device + iCloud (private)</span></td>
+        </tr>
+        <tr>
+          <td>Task status (active / completed / failed)</td>
+          <td>Track daily outcomes and compute streak</td>
+          <td><span class="pill">Device + iCloud (private)</span></td>
+        </tr>
+        <tr>
+          <td>Focus time used per session</td>
+          <td>Record how long you spent in Focus Mode</td>
+          <td><span class="pill">Device + iCloud (private)</span></td>
+        </tr>
+        <tr>
+          <td>Task date</td>
+          <td>Organise history and prevent duplicate entries</td>
+          <td><span class="pill">Device + iCloud (private)</span></td>
+        </tr>
+        <tr>
+          <td>Appearance preference (dark/light/system)</td>
+          <td>Remember your display preference</td>
+          <td><span class="pill">Device only (UserDefaults)</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      We <strong>never collect</strong> your name, email address, location, contacts, photos, health data, advertising identifiers, or any other personal information. The app does not include analytics SDKs, advertising SDKs, or crash-reporting services.
+    </p>
+
+    <!-- 3 -->
+    <h2>3. iCloud Sync</h2>
+    <p>
+      If you are signed in to iCloud on your device, Just One automatically syncs your task data using <strong>Apple CloudKit's private database</strong>. This means:
+    </p>
+    <ul>
+      <li>Your data is stored in <em>your own</em> private iCloud container (<code>iCloud.com.smartai.forge.justone</code>).</li>
+      <li>Only you can access it — not SmartAI Forge S.L., not Apple (operationally).</li>
+      <li>Data is encrypted in transit and at rest by Apple.</li>
+      <li>Apple's <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a> governs how Apple handles iCloud infrastructure.</li>
+    </ul>
+    <p>
+      If you are not signed in to iCloud, data is stored only on your local device.
+    </p>
+
+    <!-- 4 -->
+    <h2>4. Purchases &amp; Subscriptions (RevenueCat)</h2>
+    <p>
+      Just One offers an optional <strong>"Just One Premium"</strong> subscription processed through Apple's App Store. To manage subscription status across devices without requiring an account, we use <strong>RevenueCat</strong>.
+    </p>
+    <p>RevenueCat receives:</p>
+    <ul>
+      <li>An <strong>anonymous app user ID</strong> automatically generated by RevenueCat — this is a random identifier, not linked to your name or email.</li>
+      <li>Your <strong>subscription status</strong> and purchase history (i.e., whether the premium entitlement is active).</li>
+    </ul>
+    <p>
+      RevenueCat does <strong>not</strong> receive your task content, your personal identity, or any other app data. No account creation or login is required to make a purchase.
+    </p>
+    <p>
+      RevenueCat is a US-based company. Data transfers are covered by Standard Contractual Clauses and RevenueCat's Data Processing Addendum. Please review their <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">Privacy Policy</a> for full details.
+    </p>
+    <p>
+      All payment processing (card data, Apple ID) is handled exclusively by Apple — we never see or store payment information.
+    </p>
+
+    <!-- 5 -->
+    <h2>5. Notifications</h2>
+    <p>
+      Just One may request permission to send <strong>local notifications</strong> to alert you when a Focus Mode session ends. These notifications are:
+    </p>
+    <ul>
+      <li>Scheduled <strong>entirely on your device</strong> — no network request is made.</li>
+      <li>Never used for marketing, advertising, or tracking.</li>
+      <li>Completely optional — the app functions normally without notification permission.</li>
+    </ul>
+    <p>You can revoke notification permission at any time in <strong>iOS Settings → Just One → Notifications</strong>.</p>
+
+    <!-- 6 -->
+    <h2>6. Home Screen Widget</h2>
+    <p>
+      The Just One widget displays your current task and streak directly on your home screen. Widget data is shared between the app and the widget extension via an <strong>App Group</strong> (<code>group.com.justone.app</code>) stored locally on your device. No data leaves your device for widget functionality.
+    </p>
+
+    <!-- 7 -->
+    <h2>7. Legal Basis for Processing (GDPR)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Processing activity</th>
+          <th>Legal basis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Storing and syncing task data via iCloud</td>
+          <td>Performance of the service you requested (Art. 6(1)(b) GDPR)</td>
+        </tr>
+        <tr>
+          <td>Managing subscription status via RevenueCat</td>
+          <td>Performance of a contract / legitimate interest (Art. 6(1)(b) and 6(1)(f) GDPR)</td>
+        </tr>
+        <tr>
+          <td>Sending local notifications</td>
+          <td>Your explicit consent (Art. 6(1)(a) GDPR), withdrawable at any time</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 8 -->
+    <h2>8. Data Retention</h2>
+    <p>
+      Task data is retained on your device and iCloud for as long as you keep the app installed or until you delete it through the app. You can permanently delete all your data at any time by going to <strong>Settings → Delete Account</strong> within the app, or by deleting the app itself.
+    </p>
+    <p>
+      RevenueCat retains anonymous purchase records as described in their privacy policy.
+    </p>
+
+    <!-- 9 -->
+    <h2>9. Data Transfers Outside the EEA</h2>
+    <p>
+      iCloud data may be stored on Apple servers that are located outside the European Economic Area (EEA). Apple relies on Standard Contractual Clauses approved by the European Commission for such transfers.
+    </p>
+    <p>
+      RevenueCat is headquartered in the United States. Transfers are governed by Standard Contractual Clauses and their Data Processing Addendum.
+    </p>
+
+    <!-- 10 -->
+    <h2>10. Children's Privacy</h2>
+    <p>
+      Just One does not knowingly collect any data from children under 13 (or the applicable age in your jurisdiction). The app does not contain advertising or social features. If you believe a child has provided personal data, please contact us at <a href="mailto:smartaiforge@gmail.com">smartaiforge@gmail.com</a>.
+    </p>
+
+    <!-- 11 -->
+    <h2>11. Your Rights Under GDPR</h2>
+    <p>If you are located in the EU/EEA or UK, you have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Right of access</strong> — request a copy of your data.</li>
+      <li><strong>Right to rectification</strong> — correct inaccurate data.</li>
+      <li><strong>Right to erasure</strong> — delete your data ("right to be forgotten").</li>
+      <li><strong>Right to restriction</strong> — limit how we process your data.</li>
+      <li><strong>Right to data portability</strong> — receive your data in a portable format.</li>
+      <li><strong>Right to object</strong> — object to processing based on legitimate interests.</li>
+      <li><strong>Right to withdraw consent</strong> — for any processing based on consent (e.g., notifications).</li>
+    </ul>
+    <p>
+      Because your task data lives exclusively on your own device and iCloud account, you can exercise most of these rights directly within the app (Settings → Delete Account) or through your iCloud settings. For any additional requests, contact us at <a href="mailto:smartaiforge@gmail.com">smartaiforge@gmail.com</a>.
+    </p>
+    <p>
+      You also have the right to lodge a complaint with the Spanish data protection authority, the <strong>Agencia Española de Protección de Datos (AEPD)</strong>: <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.
+    </p>
+
+    <!-- 12 -->
+    <h2>12. Security</h2>
+    <p>
+      We take the security of your data seriously. Your task data is protected by iOS device encryption, iCloud end-to-end or in-transit encryption (depending on your iCloud settings), and Apple's platform security. Since we never store your data on our own servers, the attack surface for SmartAI Forge S.L. is minimal.
+    </p>
+
+    <!-- 13 -->
+    <h2>13. Third-Party Links</h2>
+    <p>
+      Just One does not contain any in-app links to third-party websites or services other than those described in this policy (Apple iCloud and RevenueCat). We are not responsible for the privacy practices of external sites.
+    </p>
+
+    <!-- 14 -->
+    <h2>14. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes in the app, applicable law, or our practices. When we do, we will update the "Last updated" date at the top of this page. For significant changes, we will update the app as well. Continued use of Just One after changes take effect constitutes your acceptance of the revised policy.
+    </p>
+
+    <!-- 15 -->
+    <h2>15. Contact Us</h2>
+    <p>
+      For any questions, requests, or complaints regarding your privacy or this policy, please contact:
+    </p>
+    <ul>
+      <li><strong>SmartAI Forge S.L.</strong></li>
+      <li><strong>Email:</strong> <a href="mailto:smartaiforge@gmail.com">smartaiforge@gmail.com</a></li>
+      <li><strong>Country:</strong> Spain</li>
+    </ul>
+    <p>We aim to respond to all enquiries within <strong>30 days</strong>.</p>
+
+    <hr />
+
+    <div class="footer">
+      <p>© 2025 SmartAI Forge S.L. · <a href="index.html">Back to Legal</a> · <a href="terms-of-use.html">Terms of Use</a></p>
+    </div>
+
+  </div>
+</body>
+</html>
